@@ -1,0 +1,15 @@
+{
+  "name": "macbox",
+  "description": "macbox: a real Mac for your coding agent",
+  "owner": {
+    "name": "Opslane",
+    "url": "https://macbox.build"
+  },
+  "plugins": [
+    {
+      "name": "macbox",
+      "source": "./",
+      "description": "Build, test, run, and tap through iOS apps on a real Mac in the cloud"
+    }
+  ]
+}

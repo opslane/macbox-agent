@@ -1,0 +1,39 @@
+{
+  "name": "macbox",
+  "version": "0.6.2",
+  "description": "A real Mac for your coding agent: build, test, run, and tap through iOS apps from any machine. CLI and MCP server.",
+  "mcpName": "io.github.opslane/macbox",
+  "bin": {
+    "macbox": "bin/macbox.js"
+  },
+  "files": [
+    "bin/macbox.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "ios",
+    "xcode",
+    "simulator",
+    "claude-code",
+    "codex",
+    "cursor",
+    "agents"
+  ],
+  "homepage": "https://macbox.build",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opslane/macbox-agent.git"
+  },
+  "license": "MIT",
+  "author": "Opslane (https://macbox.build)"
+}
