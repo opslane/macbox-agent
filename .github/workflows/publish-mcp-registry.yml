@@ -1,0 +1,29 @@
+# Publishes server.json to the official MCP Registry as io.github.opslane/macbox.
+# GitHub's OIDC token proves the run comes from an opslane repo, so no personal login or
+# org-membership check is involved. Run it by hand after publishing a new npm version:
+#   gh workflow run publish-mcp-registry.yml -R opslane/macbox-agent
+name: Publish to MCP Registry
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # for the registry's GitHub OIDC login
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install mcp-publisher
+        run: |
+          curl -fsSL "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz" -o mcp-publisher.tar.gz
+          tar xzf mcp-publisher.tar.gz mcp-publisher
+
+      - name: Log in with GitHub OIDC
+        run: ./mcp-publisher login github-oidc
+
+      - name: Publish
+        run: ./mcp-publisher publish
