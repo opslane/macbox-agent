@@ -48,6 +48,15 @@ macbox login
 macbox setup      # installs the skill for Claude Code and Codex, and notes in CLAUDE.md / AGENTS.md
 ```
 
+**Just the skill** (Claude Code, Codex, Cursor, Gemini CLI, OpenCode, and
+[more](https://skills.sh)):
+
+```sh
+npx skills add opslane/macbox-agent
+```
+
+If the CLI isn't set up yet, the skill sends your agent to the guide to install it.
+
 Log in with `macbox login`, or set `MACBOX_API_KEY` (in a cloud agent, as an environment
 secret).
 

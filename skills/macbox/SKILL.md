@@ -7,6 +7,7 @@ description: Build, test, run, and tap through native iOS apps on a real remote 
 
 `macbox` sends this folder to a real Mac, runs Xcode there, and streams the result back.
 Each command is one-shot: no TTY, no prompts. The exit code is the answer.
+If `macbox` is not installed or not logged in, follow https://api.macbox.build/guide/ first.
 
 ## Commands
 
