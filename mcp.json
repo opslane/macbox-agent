@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "macbox": {
+      "command": "npx",
+      "args": ["-y", "macbox", "mcp"]
+    }
+  }
+}
