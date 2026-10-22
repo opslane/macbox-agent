@@ -1,0 +1,15 @@
+{
+  "name": "macbox",
+  "displayName": "macbox",
+  "version": "0.6.2",
+  "description": "A real Mac for your coding agent: build, test, run, and tap through iOS apps on the iOS simulator, from any machine, including Linux and cloud sandboxes.",
+  "author": {
+    "name": "Opslane",
+    "email": "abhishek@macbox.build"
+  },
+  "homepage": "https://macbox.build",
+  "repository": "https://github.com/opslane/macbox-agent",
+  "license": "MIT",
+  "keywords": ["ios", "xcode", "simulator", "swift", "mobile", "testing", "mcp"],
+  "logo": "logo.png"
+}
