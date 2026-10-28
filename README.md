@@ -30,6 +30,13 @@ claude plugin marketplace add opslane/macbox-agent
 claude plugin install macbox@macbox
 ```
 
+**Codex (plugin: skill)**, with the macbox CLI installed (below):
+
+```sh
+codex plugin marketplace add opslane/macbox-agent
+codex plugin add macbox@macbox
+```
+
 **Any MCP client** (Codex, Cursor, Claude Desktop, VS Code, ...), with Node 18+:
 
 ```json
